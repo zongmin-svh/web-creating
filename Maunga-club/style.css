@@ -10,6 +10,7 @@
       justify-content: space-between;
       align-items: center;
       background-color: rgb(30,190,230);
+      font-family:"papyrus",fantasy;
 
     }
     
@@ -50,7 +51,7 @@
     }
     
     h1{
-      margin-bottom:100px;
+    margin-bottom:100px;
     text-align:center;
     font-size: 40px;
     padding-top:20px;
@@ -76,7 +77,8 @@
       margin:auto;
       width:100%;
       height:100%;
-      height:500px
+      height:500px;
+      font-family:"papyrus",fantasy;
     }
     
     th,
@@ -100,7 +102,7 @@
         justify-content:center
       }
 
-    .im {
+    .column {
       padding-top:250px;
       padding-bottom:250px;
       background-image: url('images/maunga_club_cabin.jpg');
@@ -109,7 +111,7 @@
 
     }
 
-    .im h3 {
+    .column h3 {
       padding-top:20px;
       padding-bottom:20px;
       background-color: black;
@@ -134,9 +136,47 @@
       justify-content:center;
       display:inline-block;
       align-items:center;
+      margin-left:40px;
       }
- 
+    
+      h4{
+        font-size:30px;
+        font-family:"papyrus",fantasy;
+        padding-top:20px;
+        padding-bottom:20px;
+        text-align:center;
+        margin-top:30px;
+      
+      }
+    .row{
+      padding-top:20px;
+      padding-bottom:30px;
 
+    }
+
+    .fancy-pictures{
+    align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:auto;
+    background-image: url('images/background.png');
+    background-size:100% 100%;
+    margin:auto;
+ }
+h5{
+font-size:35px;
+font-family:"papyrus",fantasy;
+text-align:center;
+padding-top:30px;
+}
+
+h6{
+font-size:15px;
+text-align:center;
+color:rgb(0, 0, 0);
+padding-bottom:30px
+}
 
 
 
