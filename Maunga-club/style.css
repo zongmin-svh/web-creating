@@ -11,14 +11,14 @@
       align-items: center;
       background-color: rgb(30,190,230);
       font-family:"papyrus",fantasy;
-
     }
     
-    li{
-    color:red;
-    list-style-type: none;}
-    
-    div li a{
+    .header img{
+      width:300px;
+      display:flex
+    }
+
+    .header li a{
     text-decoration: none;
     display: inline-block;
     font-size:20px;
@@ -148,7 +148,7 @@
         margin-top:30px;
       
       }
-    .row{
+    .column1{
       padding-top:20px;
       padding-bottom:30px;
 
@@ -160,7 +160,6 @@
     flex-wrap:wrap;
     justify-content:center;
     margin:auto;
-    background-image: url('images/background.png');
     background-size:100% 100%;
     margin:auto;
  }
@@ -192,6 +191,7 @@ padding-bottom:30px
   margin-right: auto;
   padding: 1em;
   margin-top:30px;
+  margin-bottom:50px
 }
 @media (min-width: 600px) {
   .contain {
@@ -238,11 +238,11 @@ button {
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 3px;
 }
 
 .contacts {
-  background: #4b5195;
+  background: #0b8aaa;
   color: #fff;
 }
 
@@ -280,4 +280,116 @@ button {
 button:hover, button:focus {
   background: gold;
   outline: 0;
+}
+
+
+.head h5 {
+  font-size:30px
+}
+
+.head h6 {
+  font-size:15px;
+  font-family:"papyrus",fantasy;
+}
+
+p{
+  font-size:20px;
+  font-family: "papyrus",fantasy;
+  display:flex;
+  margin-bottom:10px
+
+}
+
+
+.column1{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 5em;
+  margin-top: 2em;
+  justify-content: center;
+  padding:auto;
+  margin:auto
+}
+
+.a{
+  border: 5px solid #6c6d6e;
+  padding: 0.5em;
+  display:grid;
+  margin-left:10px
+}
+.b{
+  border: 5px solid #6c6d6e;
+  padding: 0.5em;
+
+}
+
+.c{
+  border: 5px solid #6c6d6e;
+  padding: 0.5em;
+}
+
+.d{
+  border: 5px solid #6c6d6e;
+  padding: 0.5em;
+  margin-right:10px;
+
+}
+
+
+body{
+  background-image: url('images/baccc.png');
+  background-size: 100% 100%;
+}
+
+
+.ending a{
+  font-size:35px;
+  border: 3px solid rgb(78, 76, 76);
+  display:block;
+  margin:auto;
+  text-decoration: none;
+  border-width:4px;
+  border-color:rgb(80, 78, 78);
+  color:white;
+  width:auto;
+  margin-bottom:20px;
+  margin-right:10px;
+  margin-left:10px;
+  background-color:black;
+  text-align:center
+}
+
+
+.popup{
+  width:400px;
+  background:#fff;
+  border-radius:6px;
+  position:absolute;
+  top:0;
+  left:50%;
+  transform:translate(-50%, -50%) scale(0.1);
+  text-align:center;
+  padding:0 30px 30px;
+  color:#333;
+  transition:transform 0.4s, top 0.4s;
+  visibility:hidden;
+}
+
+.open-popup{
+  visibility: visible;
+  top:50%;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }

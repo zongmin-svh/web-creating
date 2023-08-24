@@ -17,17 +17,18 @@
     <li><a href="booking.html">Booking</a></li>
 </div>
 
-
+<div class="head">
+    <h5>Ready to make a booking?</h5>
+    <h6>Fill out the form and click send, our friendly team will get in touch with you to confirm the booking!</h6>
+</div>
     <div class="contain">
-
         <div class="wrapper">
           <div class="contacts">
             <h3>Our contacts</h3>
       
             <ul>
-              <li>San Joe St.</li>
-              <li>00-1212121-11</li>
-              <li>mail@mail.com</li>
+              <li>Maunga Club</li>
+              <li>maungaclub@maungaclub.maungaclub</li>
             </ul>
           </div>
       
@@ -63,12 +64,29 @@
                 <textarea name="" id="" cols="30" rows="7"></textarea>
               </p>
               <p class="full-width">
-                <button>Send</button>
-  
+                <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+                <div class="popup" id="openPopup">
+                  <h6>Tkank you!</h6>
+                  <p>Your details has been successfully submitted. Our team will get in touch with you shortly.</p>
+                  <button type="button" onclick="closePopup()">Ok</button>
+                </div>
               </p>
             </form>
           </div>
         </div>
       </div>
+<script>
+  var popup = document.getElementById("openPopup");
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+</script>
+      <footer>
+        <hr />
+        © 2023 Maunga Club.
+    </footer>
 </body>
 </html>
